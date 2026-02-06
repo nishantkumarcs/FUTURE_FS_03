@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local Business | Live Pitch Website</title>
+    <link rel="stylesheet" href="local.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <h2>FreshBrew Café</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#pitch">Live Pitch</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+    <h1>Your Neighborhood’s Favorite Coffee Spot ☕</h1>
+    <p>Fresh coffee • Cozy space • Friendly vibes</p>
+    <button onclick="scrollToContact()">Get in Touch</button>
+</section>
+
+<!-- Services -->
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+        <div class="card">☕ Fresh Coffee</div>
+        <div class="card">🥐 Bakery Items</div>
+        <div class="card">📶 Free Wi-Fi</div>
+        <div class="card">🎉 Event Hosting</div>
+    </div>
+</section>
+
+<!-- Live Pitch Section -->
+<section id="pitch" class="pitch">
+    <h2>📢 Live Business Pitch</h2>
+    <p>Why choose FreshBrew Café?</p>
+
+    <div class="stats">
+        <div>
+            <h3 id="customers">0</h3>
+            <p>Happy Customers</p>
+        </div>
+        <div>
+            <h3 id="years">0</h3>
+            <p>Years in Business</p>
+        </div>
+        <div>
+            <h3 id="events">0</h3>
+            <p>Events Hosted</p>
+        </div>
+    </div>
+
+    <button onclick="startPitch()">Start Live Pitch</button>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <p id="msg"></p>
+</section>
+
+<footer>
+    <p>© 2026 FreshBrew Café | Local Business Website</p>
+</footer>
+
+<script src="local.js"></script>
+</body>
+</html>
